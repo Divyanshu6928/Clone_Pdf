@@ -1,0 +1,67 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    background-image: url('/Assets/Images/Stars.jpg'); /* Assuming you have a stars background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white; /* Changing text color to white for better contrast */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffcc00;
+}
+
+.pdf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.pdf-item {
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.pdf-item:hover {
+    transform: scale(1.05);
+}
+
+.pdf-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.pdf-item p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #555;
+}
